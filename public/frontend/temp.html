@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>E-Commerce</title>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- <link rel="shortcut icon" href="ico/favicon.png"> -->
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="js/datetimepicker/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="js/owl-carousel/assets/owl.carousel.css" rel="stylesheet">
+    <link href="js/owl-carousel/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="css/themecss/lib.css" rel="stylesheet">
+    <link href="js/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+    
+    
+   <link href="css/main.css" rel="stylesheet">
+    <!-- <link href="css/responsive.css" rel="stylesheet"> -->
+    
+</head>
+<body>
+    <div id="wrapper" class="wrapper-full">
+        <div  class="">
+            <!-- Header Container  -->
+            <header id="header" class=" variantleft type_2">
+                <!-- Header Top -->
+                <div class="header-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="header-top-left form-inline col-sm-6 col-xs-6 compact-hidden">
+                                <div class="form-group currencies-block">
+                                    <form action="index.html" method="post" enctype="multipart/form-data" id="currency">
+                                        <a class="btn btn-xs dropdown-toggle" data-toggle="dropdown">
+                                            <span class="icon icon-credit "></span> USD <span class="fa fa-caret-down"></span>
+                                        </a>
+                                        <ul class="dropdown-menu btn-xs" >
+                                            <li> <a href="#">(€)&nbsp;Euro</a></li>
+                                            <li> <a href="#">(£)&nbsp;Pounds</a></li>
+                                            <li> <a href="#">($)&nbsp;USD</a></li>
+                                        </ul>
+                                    </form>
+                                </div>
+                                <div class="form-group languages-block ">
+                                    <form action="index.html" method="post" enctype="multipart/form-data" id="bt-language">
+                                        <a class="btn btn-xs dropdown-toggle" data-toggle="dropdown">
+                                            <img src="img/demo/flags/gb.png" alt="English" title="English">
+                                            <span class="hidden-xs">English</span>
+                                            <span class="fa fa-caret-down"></span>
+                                        </a>
+                                        <ul class="dropdown-menu" >
+                                            <li><a href="index.html"><img class="image_flag" src="img/demo/flags/gb.png" alt="English" title="English"> English </a></li>
+                                            <li> <a href="html_width_RTL/home2.html"> <img class="image_flag" src="img/demo/flags/lb.png" alt="Arabic" title="Arabic"> Arabic </a> </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="header-top-right collapsed-block text-right  col-sm-6 col-xs-6 compact-hidden">
+                                <div class="tabBlock" id="TabBlock-1">
+                                    <ul class="top-link list-inline">
+                                        <li class="wishlist hidden-xs"><a href="wishlist.html" id="wishlist-total" class="top-link-wishlist" title="Welcome Customer!"><span>Welcome Customer!</span></a></li>
+                                        <li class="login"><a href="login.html" class="top-link-checkout" title="Sign In"><span>Sign In</span></a></li>
+                                        <li class="register"><a href="register.html" title="Register"><span>Register</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //Header Top -->
+                
+                <!-- Header center -->
+                <div class="header-center left">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Logo -->
+                            <div class="navbar-logo col-md-3 col-sm-12 col-xs-7">
+                                <a href="index.html"><img src="img/files/logo.png" title="Your Store" alt="Your Store"></a>
+                            </div>
+                            <!-- //end Logo -->
+                            
+                            <!-- Search -->
+                            <div id="sosearchpro" class=" col-xs-12 col-sm-8 col-md-5 search-pro">
+                                <form method="GET" action="index.html">
+                                    <div id="search0" class="search input-group">
+                                        
+                                        
+                                        <input class="autosearch-input form-control" type="text" value="" size="50" autocomplete="off" placeholder="Search product..." name="search">
+                                        <span class="input-group-btn">
+                                            <button type="submit" class="button-search btn btn-primary" name="submit_search"><i class="fa fa-search"></i></button>
+                                        </span>
+                                    </div>
+                                    <input type="hidden" name="route" value="product/search">
+                                </form>
+                                
+                            </div>
+                            <!-- //end Search -->
+                            
+                            <!-- Secondary menu -->
+                            <div class="col-md-4 col-sm-4 col-xs-5 shopping_cart pull-right">
+                                <div class="header-text hidden-xs">
+                                    <p><i class="fa fa-phone" aria-hidden="true"></i>	   Call Us: <a href="tel:(888) 123456789">(888) 123456789</a></p>
+                                </div>
+                                <!--cart-->
+                                <div id="cart" class=" btn-group btn-shopping-cart">
+                                    <a data-loading-text="Loading..." class="top_cart dropdown-toggle" data-toggle="dropdown">
+                                        <div class="shopcart">
+                                            <span class="handle pull-left"></span>
+                                            <span class="number-shopping-cart">2</span>
+                                            <span class="title hidden-xs">My Cart</span>
+                                            <p class="text-shopping-cart cart-total-full hidden-xs"> $0.00 </p>
+                                        </div>
+                                    </a>
+                                    
+                                    <ul class="tab-content content dropdown-menu pull-right shoppingcart-box" role="menu">
+                                        
+                                        <li>
+                                            <table class="table table-striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-center" style="width:70px">
+                                                            <a href="product.html"> <img src="img/files/products/J9.jpg" style="width:70px" alt="Filet Mign" title="Filet Mign" class="preview"> </a>
+                                                        </td>
+                                                        <td class="text-left"> <a class="cart_product_name" href="product.html">Filet Mign</a> </td>
+                                                        <td class="text-center"> x1 </td>
+                                                        <td class="text-center"> $1,202.00 </td>
+                                                        
+                                                        <td class="text-right">
+                                                            <a onclick="cart.remove('2');" class="fa fa-times fa-delete"></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center" style="width:70px">
+                                                            <a href="product.html"> <img src="img/files/products/J3.jpg" style="width:70px" alt="Canon EOS 5D" title="Canon EOS 5D" class="preview"> </a>
+                                                        </td>
+                                                        <td class="text-left"> <a class="cart_product_name" href="product.html">Canon EOS 5D</a> </td>
+                                                        <td class="text-center"> x1 </td>
+                                                        <td class="text-center"> $60.00 </td>
+                                                        
+                                                        <td class="text-right">
+                                                            <a onclick="cart.remove('1');" class="fa fa-times fa-delete"></a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <table class="table table-bordered">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-left"><strong>Sub-Total</strong>
+                                                            </td>
+                                                            <td class="text-right">$1,060.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left"><strong>Eco Tax (-2.00)</strong>
+                                                            </td>
+                                                            <td class="text-right">$2.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left"><strong>VAT (20%)</strong>
+                                                            </td>
+                                                            <td class="text-right">$200.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-left"><strong>Total</strong>
+                                                            </td>
+                                                            <td class="text-right">$1,262.00</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p class="text-right"> <a class="btn view-cart" href="cart.html"><i class="fa fa-shopping-cart"></i>View Cart</a>&nbsp;&nbsp;&nbsp; <a class="btn btn-mega checkout-cart" href="checkout1.html"><i class="fa fa-share"></i>Checkout</a> </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--//cart-->
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- //Header center -->
+                
+                <!-- Header Bottom -->
+                <div class="header-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="sidebar-menu col-md-3  col-xs-6 hidden-xs">
+                                <div class="responsive so-megamenu ">
+                                    <div class="so-vertical-menu no-gutter compact-hidden">
+                                        <nav class="navbar-default">
+                                            <div class="container-megamenu vertical ">
+                                                <div id="menuHeading">
+                                                    <div class="megamenuToogle-wrapper">
+                                                        <div class="megamenuToogle-pattern">
+                                                            <div class="container">
+                                                                <div>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                    <span></span>
+                                                                </div>
+                                                                All Categories
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="navbar-header">
+                                                    <button   id="show-verticalmenu" data-toggle="collapse" class="navbar-toggle fa fa-list-alt">
+                                                        
+                                                    </button>
+                                                </div>
+                                                <div class="vertical-wrapper" >
+                                                    <span id="remove-verticalmenu" class="fa fa-times"></span>
+                                                    <div class="megamenu-pattern">
+                                                        <div class="container">
+                                                            <ul class="megamenu">
+                                                                <li class="item-vertical style1 with-sub-menu hover">
+                                                                    <p class="close-menu"></p>
+                                                                    <a href="#" class="clearfix">
+                                                                        
+                                                                        <span>Clothes</span>
+                                                                        
+                                                                    </a>
+                                                                    <div class="sub-menu" data-subwidth="100" style="width: 900px; display: none; right: 0px;">
+                                                                        <div class="content" style="display: none;">
+                                                                            <div class="row">
+                                                                                <div class="col-sm-12">
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-4 col-sm-6 static-menu">
+                                                                                            <div class="menu">
+                                                                                                <ul>
+                                                                                                    <li>
+                                                                                                        <a href="#" class="main-menu">Dresses</a>
+                                                                                                        <ul>
+                                                                                                            <li><a href="shop.html">Party Dresses</a></li>
+																											<li><a href="shop.html">Maxi Dresses</a></li>
+																											<li><a href="shop.html">Mini Dresses</a></li>
+																											<li><a href="shop.html">Midi Dresses</a></li>
+																											<li><a href="shop.html">Day Dresses</a></li>
+																											<li><a href="shop.html">One Pieces</a></li>
+                                                                                                        </ul>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#" class="main-menu">Casuals</a>
+                                                                                                        <ul>
+                                                                                                            <li><a href="shop.html">T - Shirts</a></li>
+																											<li><a href="shop.html">Jeans</a></li>
+																											<li><a href="shop.html">Skirts</a></li>
+                                                                                                        </ul>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4 col-sm-6 static-menu">
+                                                                                            <div class="menu">
+                                                                                                <ul>
+                                                                                                    <li>
+                                                                                                        <a href="#" class="main-menu">Denims</a>
+                                                                                                        <ul>
+                                                                                                            <li><a href="#">Denim Shirts</a></li>
+                                                                                                            <li><a href="#">Denim Jackets</a></li>
+                                                                                                            <li><a href="#">Denim Shorts</a></li>
+                                                                                                        </ul>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#" class="main-menu">Tops</a>
+                                                                                                        <ul>
+                                                                                                            <li><a href="#">Shirts</a></li>
+                                                                                                            <li><a href="#">T - Shirts</a></li>
+                                                                                                            <li><a href="#">Blazers</a></li>
+                                                                                                        </ul>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4 col-sm-6 static-menu">
+                                                                                            <div class="menu">
+                                                                                                <ul>
+                                                                                                    <li>
+                                                                                                        <a href="#" class="main-menu">Bottoms</a>
+                                                                                                        <ul>
+                                                                                                            <li><a href="#" onclick="window.location = '18_46';">Skirts</a></li>
+                                                                                                            <li><a href="#" onclick="window.location = '24_64';">Trousers</a></li>
+                                                                                                            <li><a href="#" onclick="window.location = '18_45';">Leggings</a></li>
+                                                                                                            <li><a href="#" onclick="window.location = '18_30';">Shorts</a></li>
+                                                                                                        </ul>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="item-vertical">
+                                                                    <p class="close-menu"></p>
+                                                                    <a href="#" class="clearfix">
+                                                                        
+                                                                        <span>Handicrafts</span>
+                                                                        
+                                                                    </a>
+                                                                </li>
+                                                                <li class="item-vertical with-sub-menu hover">
+                                                                    <p class="close-menu"></p>
+                                                                    <a href="#" class="clearfix">
+                                                                        
+                                                                        <span>Hand Knitted</span>
+                                                                        
+                                                                    </a>
+                                                                    <div class="sub-menu" data-subwidth="100" style="width: 900px; display: none; right: 0px;">
+                                                                        <div class="content" style="display: none;">
+                                                                            <div class="row">
+                                                                                <div class="col-md-12">
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-4 col-sm-6 static-menu">
+                                                                                            <div class="menu">
+                                                                                                <ul>
+                                                                                                    <li>
+                                                                                                        <a href="#" class="main-menu">Car Alarms and Security</a>
+                                                                                                        <ul>
+                                                                                                            <li><a href="#">Car Audio &amp; Speakers</a></li>
+                                                                                                            <li><a href="#">Gadgets &amp; Auto Parts</a></li>
+                                                                                                            <li><a href="#">Gadgets &amp; Auto Parts</a></li>
+                                                                                                            <li><a href="#">Headphones, Headsets</a></li>
+                                                                                                        </ul>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="24" onclick="window.location = '24';" class="main-menu">Health &amp; Beauty</a>
+                                                                                                        <ul>
+                                                                                                            <li>
+                                                                                                                <a href="#">Home Audio</a>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <a href="#">Helicopters &amp; Parts</a>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <a href="#">Outdoor &amp; Traveling</a>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <a href="#">Toys &amp; Hobbies</a>
+                                                                                                            </li>
+                                                                                                        </ul>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4 col-sm-6 static-menu">
+                                                                                            <div class="menu">
+                                                                                                <ul>
+                                                                                                    <li>
+                                                                                                        <a href="#" class="main-menu">Electronics</a>
+                                                                                                        <ul>
+                                                                                                            <li>
+                                                                                                                <a href="#">Earings</a>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <a href="#">Salon &amp; Spa Equipment</a>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <a href="#">Shaving &amp; Hair Removal</a>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <a href="#">Smartphone &amp; Tablets</a>
+                                                                                                            </li>
+                                                                                                        </ul>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#" class="main-menu">Sports &amp; Outdoors</a>
+                                                                                                        <ul>
+                                                                                                            <li>
+                                                                                                                <a href="#">Flashlights &amp; Lamps</a>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <a href="#">Fragrances</a>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <a href="#">Fishing</a>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <a href="#">FPV System &amp; Parts</a>
+                                                                                                            </li>
+                                                                                                        </ul>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4 col-sm-6 static-menu">
+                                                                                            <div class="menu">
+                                                                                                <ul>
+                                                                                                    <li>
+                                                                                                        <a href="#" class="main-menu">More Car Accessories</a>
+                                                                                                        <ul>
+                                                                                                            <li>
+                                                                                                                <a href="#">Lighter &amp; Cigar Supplies</a>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <a href="#">Mp3 Players &amp; Accessories</a>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <a href="#">Men Watches</a>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <a href="#">Mobile Accessories</a>
+                                                                                                            </li>
+                                                                                                        </ul>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#" class="main-menu">Gadgets &amp; Auto Parts</a>
+                                                                                                        <ul>
+                                                                                                            <li>
+                                                                                                                <a href="#">Gift &amp; Lifestyle Gadgets</a>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <a href="#">Gift for Man</a>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <a href="#">Gift for Woman</a>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <a href="#">Gift for Woman</a>
+                                                                                                            </li>
+                                                                                                        </ul>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="item-vertical css-menu with-sub-menu hover">
+                                                                    <p class="close-menu"></p>
+                                                                    <a href="#" class="clearfix">
+                                                                        
+                                                                        
+                                                                        <span>Shoes</span>
+                                                                        
+                                                                    </a>
+                                                                    <div class="sub-menu" data-subwidth="30" style="width: 270px; display: none; right: 0px;">
+                                                                        <div class="content" style="display: none;">
+                                                                            <div class="row">
+                                                                                <div class="col-sm-12">
+                                                                                    <div class="row">
+                                                                                        <div class="col-sm-12 hover-menu">
+                                                                                            <div class="menu">
+                                                                                                <ul>
+                                                                                                    <li>
+                                                                                                        <a href="#" class="main-menu">Boots</a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#" class="main-menu">Heels</a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#" class="main-menu">Trainers</a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#" class="main-menu">Platforms</a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#" class="main-menu">Sandals</a>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="item-vertical item-vertical-hide">
+                                                                    <p class="close-menu"></p>
+                                                                    <a href="#" class="clearfix">
+                                                                        
+                                                                        <span>Jewelry &amp; Watches</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="item-vertical item-vertical-hide">
+                                                                    <p class="close-menu"></p>
+                                                                    <a href="#" class="clearfix">
+                                                                        
+                                                                        <span>Bags, Holiday Supplies</span>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            
+                            <!-- Main menu -->
+                            <div class="megamenu-hori header-bottom-right  col-md-9 col-sm-6 col-xs-6 ">
+                                <div class="responsive so-megamenu ">
+                                    <nav class="navbar-default">
+                                        <div class=" container-megamenu  horizontal">
+                                            
+                                            <div class="navbar-header">
+                                                <button   id="show-megamenu" data-toggle="collapse" class="navbar-toggle">
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                </button>
+                                            </div>
+                                            
+                                            <div class="megamenu-wrapper">
+                                                <span id="remove-megamenu" class="fa fa-times"></span>
+                                                <div class="megamenu-pattern">
+                                                    <div class="container">
+                                                        <ul class="megamenu " data-transition="slide" data-animationtime="250">
+                                                            <li class="home hover">
+                                                                <p class="close-menu"></p>
+                                                                <a href="index.html" class="menu1">Home </a>
+                                                            </li>
+                                                            <li class="with-sub-menu hover">
+                                                                <p class="close-menu"></p>
+                                                                <a href="#" class="clearfix menu1">
+                                                                    <strong>All Accessories</strong>
+                                                                    
+                                                                </a>
+                                                                <div class="sub-menu" style="width: 100%; right: 0px; display: none;">
+                                                                    <div class="content" style="height: 288px; display: none;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <div class="column">
+                                                                                    <a href="#" class="title-submenu">Jwellery</a>
+                                                                                    <div>
+                                                                                        <ul class="row-list">
+                                                                                           <li><a href="shop.html">Category Page  </a></li>
+                                                                                            <li><a href="shop.html">Category Page </a></li>
+                                                                                            <li><a href="shop.html">Category Page </a></li>
+                                                                                            <li><a href="shop.html">View All >></a></li>
+                                                                                        </ul>
+                                                                                        
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="column">
+                                                                                    <a href="#" class="title-submenu">Sunglasses</a>
+                                                                                    <div>
+                                                                                        <ul class="row-list">
+                                                                                            <li><a href="shop.html">Category Page</a></li>
+                                                                                            <li><a href="shop.html">Category Page</a></li>
+                                                                                            <li><a href="shop.html">Category Page</a></li>
+                                                                                            <li><a href="shop.html">View All >></a></li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="column">
+                                                                                    <a href="#" class="title-submenu">Bags</a>
+                                                                                    <div>
+                                                                                        <ul class="row-list">
+                                                                                            <li><a href="shop.html">Category Page</a></li>
+                                                                                            <li><a href="shop.html">Category Page</a></li>
+                                                                                            <li><a href="shop.html">Category Page</a></li>
+                                                                                            <li><a href="shop.html">Category Page</a></li>
+                                                                                            <li><a href="shop.html">View All >></a></li>
+                                                                                            
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="column">
+                                                                                    <a href="#" class="title-submenu">Watches</a>
+                                                                                    <div>
+                                                                                        <ul class="row-list">
+                                                                                            <li><a href="shop.html">Category Page</a></li>
+                                                                                            <li><a href="shop.html">Category Page</a></li>
+                                                                                            <li><a href="shop.html">Category Page</a></li>
+                                                                                            <li><a href="shop.html">Category Page</a></li>
+                                                                                            <li><a href="shop.html">View All >></a></li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="with-sub-menu hover sub-menu-page">
+                                                                <p class="close-menu"></p>
+                                                                <a href="#" class="clearfix menu1">
+                                                                    <strong>Brands</strong>
+                                                                    
+                                                                </a>
+                                                                <div class="sub-menu" style="width: 40%; right: auto; display: none;">
+                                                                    <div class="content" style="height: 160px; display: none;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-6">
+                                                                                <ul class="row-list">
+                                                                                    <li><a class="subcategory_item" href="shop.html">Brand</a></li>
+                                                                                    
+                                                                                    <li><a class="subcategory_item" href="shop.html">Brand</a></li>
+                                                                                    <li><a class="subcategory_item" href="shop.html">Brand</a></li>
+                                                                                    <li><a class="subcategory_item" href="shop.html">Brand</a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <ul class="row-list">
+                                                                                    <li><a class="subcategory_item" href="shop.html">Brand</a></li>
+                                                                                    <li><a class="subcategory_item" href="shop.html">Brand</a></li>
+                                                                                    <li><a class="subcategory_item" href="shop.html">Brand</a></li>
+                                                                                    <li><a class="subcategory_item" href="shop.html">Brand</a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="with-sub-menu hover">
+                                                                <p class="close-menu"></p>
+                                                                <a href="#" class="clearfix menu1">
+                                                                    <strong>Categories</strong>
+                                                                    <span class="label"></span>
+                                                                    
+                                                                </a>
+                                                                <div class="sub-menu" style="width: 100%; right: 0px; display: none;">
+                                                                    <div class="content" style="height: 398px; display: none;">
+                                                                        <div class="row">
+                                                                            <div class="col-sm-12">
+                                                                                <div class="row">
+                                                                                     <div class="col-md-3 img img1">
+                                                                                        <a href="product.html"><img src="img/demo/cms/img1.jpg" alt="banner1"></a>
+                                                                                    </div>
+                                                                                    <div class="col-md-3 img img2">
+                                                                                        <a href="product.html"><img src="img/demo/cms/img2.jpg" alt="banner2"></a>
+                                                                                    </div>
+                                                                                    <div class="col-md-3 img img3">
+                                                                                        <a href="product.html"><img src="img/demo/cms/img3.jpg" alt="banner3"></a>
+                                                                                    </div>
+                                                                                    <div class="col-md-3 img img4">
+                                                                                        <a href="product.html"><img src="img/demo/cms/img4.jpg" alt="banner4"></a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <a href="#" class="title-submenu">Automotive</a>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12 hover-menu">
+                                                                                        <div class="menu">
+                                                                                            <ul>
+                                                                                                <li><a href="shop.html" class="main-menu">Car Alarms and Security</a></li>
+                                                                                                <li><a href="shop.html" class="main-menu">Car Audio &amp; Speakers</a></li>
+                                                                                                <li><a href="shop.html" class="main-menu">Gadgets &amp; Auto Parts</a></li>
+                                                                                                <li><a href="shop.html" class="main-menu">More Car Accessories</a></li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <a href="#" class="title-submenu">Electronics</a>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12 hover-menu">
+                                                                                        <div class="menu">
+                                                                                            <ul>
+                                                                                                <li><a href="shop.html" class="main-menu">Battereries &amp; Chargers</a></li>
+                                                                                                <li><a href="shop.html" class="main-menu">Headphones, Headsets</a></li>
+                                                                                                <li><a href="shop.html" class="main-menu">Home Audio</a></li>
+                                                                                                <li><a href="shop.html" class="main-menu">Mp3 Players &amp; Accessories</a></li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <a href="#" class="title-submenu">Jewelry &amp; Watches</a>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12 hover-menu">
+                                                                                        <div class="menu">
+                                                                                            <ul>
+                                                                                                <li><a href="shop.html" class="main-menu">Earings</a></li>
+                                                                                                <li><a href="shop.html" class="main-menu">Wedding Rings</a></li>
+                                                                                                <li><a href="shop.html" class="main-menu">Men Watches</a></li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <a href="#" class="title-submenu">Bags, Holiday Supplies</a>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-12 hover-menu">
+                                                                                        <div class="menu">
+                                                                                            <ul>
+                                                                                                <li><a href="shop.html" class="main-menu">Gift &amp; Lifestyle Gadgets</a></li>
+                                                                                                <li><a href="shop.html" class="main-menu">Gift for Man</a></li>
+                                                                                                <li><a href="shop.html" class="main-menu">Gift for Woman</a></li>
+                                                                                                <li><a href="shop.html" class="main-menu">Lighter &amp; Cigar Supplies</a></li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            
+                                                            <li class="with-sub-menu hover">
+                                                                <p class="close-menu"></p>
+                                                                <a href="#" class="clearfix menu1">
+                                                                    <strong>Jwellery</strong>
+                                                                    
+                                                                    
+                                                                </a>
+                                                                <div class="sub-menu" style="width: 100%; display: none; right: 0px;">
+                                                                    <div class="content" style="display: none; height: 333px;">
+                                                                        <div class="row">
+                                                                            <div class="col-md-8">
+                                                                                <div class="row">
+                                                                                    <div class="col-md-6 static-menu">
+                                                                                        <div class="menu">
+                                                                                            <ul>
+                                                                                                <li>
+                                                                                                    <a href="#" class="main-menu">Automotive</a>
+                                                                                                    <ul>
+                                                                                                        <li><a href="#">Car Alarms and Security</a></li>
+                                                                                                        <li><a href="#">Car Audio &amp; Speakers</a></li>
+                                                                                                        <li><a href="#">Gadgets &amp; Auto Parts</a></li>
+                                                                                                    </ul>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <a href="#" class="main-menu">Smartphone &amp; Tablets</a>
+                                                                                                    <ul>
+                                                                                                        <li><a href="#">Accessories for i Pad</a></li>
+                                                                                                        <li><a href="#">Apparel</a></li>
+                                                                                                        <li><a href="#">Accessories for iPhone</a></li>
+                                                                                                    </ul>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-md-6 static-menu">
+                                                                                        <div class="menu">
+                                                                                            <ul>
+                                                                                                <li>
+                                                                                                    <a href="#" class="main-menu">Sports &amp; Outdoors</a>
+                                                                                                    <ul>
+                                                                                                        <li><a href="#">Camping &amp; Hiking</a></li>
+                                                                                                        <li><a href="#">Cameras &amp; Photo</a></li>
+                                                                                                        <li><a href="#">Cables &amp; Connectors</a></li>
+                                                                                                    </ul>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <a href="#" class="main-menu">Electronics</a>
+                                                                                                    <ul>
+                                                                                                        <li><a href="#">Battereries &amp; Chargers</a></li>
+                                                                                                        <li><a href="#">Bath &amp; Body</a></li>
+                                                                                                        <li><a href="#">Outdoor &amp; Traveling</a></li>
+                                                                                                    </ul>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="">
+                                                                <p class="close-menu"></p>
+                                                                <a href="blog-page.html" class="clearfix menu1">
+                                                                    <strong>Blog</strong>
+                                                                    <span class="label"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                            <!-- //end Main menu -->
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+            </header>
+            <!-- //Header Container  -->
+            <div class="main-container container">
+                
+            </div>
+            
+            <!-- Footer Container -->
+            <footer class="footer-container type_footer2">
+                
+                
+                <!-- Footer Top Container -->
+                
+                <div class="footer-mid">
+                    <div class="container">
+                        <div class="row">
+                            <div class=" help">
+                                <div class="footer-mid-left col-sm-6 col-xs-12">
+                                    <h3>NEED HELP? </h3>
+                                    <p>SUPPORT TEAM 24/7 AT (844) 555-8386</p>
+                                </div>
+                                <div class="footer-mid-right col-sm-6 col-xs-12">
+                                    <div class="btn-sub">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                        <input class="autosearch-input form-control" type="text" value="" size="50" autocomplete="off" placeholder="Your email address ..." name="search">
+                                        <button type="submit" class="button-search btn btn-primary" name="submit_search">Subscribe</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Footer Mid -->
+                <section class="footer-top">
+                    <div class="container content">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12">
+                                <div class=" collapsed-block ">
+                                    <div class="module clearfix">
+                                        <h3 class="modtitle">Contact Us	</h3>
+                                        <div class="modcontent">
+                                            <ul class="contact-address">
+                                                <li><p><span class="fa fa-home"></span><span>Address : </span> My Company, 42 avenue des Champs Elysées</p></li>
+                                                <li><span class="fa fa-envelope-o"></span><span>Email : </span> <a href="#"> sales@yourcompany.com</a></li>
+                                                <li><p><span class="fa fa-phone"> </span><span>Phone : </span> 0123456789</p> </li>
+                                            </ul>
+                                        </div>
+                                        <div class="share-icon">
+                                            <ul>
+                                                <li class="facebook"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li class="twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li class="google"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                                <li class="skype"><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-information">
+                                    <div class="module clearfix">
+                                        <h3 class="modtitle">Information</h3>
+                                        <div class="modcontent">
+                                            <ul class="menu">
+                                               <li><a href="#">About Us</a></li>
+                                                <li><a href="#">FAQ</a></li>
+                                                <li><a href="#">Order history</a></li>
+                                                <li><a href="#">Order information</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class=" box-extras">
+                                    <div class="module clearfix">
+                                        <h3 class="modtitle">Extras</h3>
+                                        <div class="modcontent">
+                                            <ul class="menu">
+                                                <li><a href="#">Contact Us</a></li>
+                                                <li><a href="#">Returns</a></li>
+                                                <li><a href="#">Site Map</a></li>
+                                                <li><a href="#">My Account</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="box-account">
+                                    <div class="module clearfix">
+                                        <h3 class="modtitle">My Account</h3>
+                                        <div class="modcontent">
+                                            <ul class="menu">
+                                                <li><a href="#">Brands</a></li>
+                                                <li><a href="#">Gift Vouchers</a></li>
+                                                <li><a href="#">Affiliates</a></li>
+                                                <li><a href="#">Specials</a></li>
+                                                <li><a href="#" target="_blank">Our Blog</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /Footer Top Container -->
+                
+                
+                <div class="footer-bottom-block ">
+                    <div class=" container">
+                        <div class="row">
+                            <div class="footer-bottom-header">
+                                <div class="col-xs-12 col-sm-5 download">
+                                    <div class="text-footer-bot" style="float:none;">
+                                        <p>Coded with <i class="fa fa-heart"></i> by <a href="#" style="float:none;">KTMRush</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-7 pay">
+                                    <ul>
+                                        <li><img src="img/demo/payment/visa.jpg" alt=""></li>
+                                        <li><img src="img/demo/payment/meastro.jpg" alt=""></li>
+                                        <li><img src="img/demo/payment/paypal.jpg" alt=""></li>
+                                        <li><img src="img/demo/payment/union.jpg" alt=""></li>
+                                        <li><img src="img/demo/payment/cirrus.jpg" alt=""></li>
+                                        <li><img src="img/demo/payment/ebay.jpg" alt=""></li>
+                                    </ul>
+                                    <div class="text-footer-bot">
+                                        <p>Copyright @2020 - LuklaStore</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="back-to-top"><i class="fa fa-angle-up"></i><span> Top </span></div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- Include Libs & Plugins	============================================ -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/themejs/libs.js"></script>
+    <script type="text/javascript" src="js/unveil/jquery.unveil.js"></script>
+    <script type="text/javascript" src="js/countdown/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js"></script>
+    <script type="text/javascript" src="js/datetimepicker/moment.js"></script>
+    <script type="text/javascript" src="js/datetimepicker/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/modernizr/modernizr-2.6.2.min.js"></script>
+    
+    
+    <!-- Theme files		============================================ -->
+    <script type="text/javascript" src="js/themejs/application.js"></script>
+    <script type="text/javascript" src="js/themejs/homepage.js"></script>
+    <!-- <script type="text/javascript" src="js/themejs/toppanel.js"></script> -->
+    <script type="text/javascript" src="js/themejs/so_megamenu.js"></script>
+    <script type="text/javascript" src="js/themejs/addtocart.js"></script>
+    <!-- <script type="text/javascript" src="js/themejs/pathLoader.js"></script>	 -->
+    
+</body>
+</html>
+

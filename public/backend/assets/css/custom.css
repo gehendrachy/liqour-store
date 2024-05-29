@@ -1,0 +1,193 @@
+hr {
+    border-top: 1px solid rgb(225, 232, 237);
+}
+.note-editor.note-frame {
+    border-color: #e1e8ed;
+    background: transparent;
+}
+.note-editor.note-frame .note-editing-area .note-editable {
+    background: transparent;
+    color: #a5a8ad;
+}
+.note-editor.note-frame .note-statusbar {
+    background-color: transparent;
+}
+.panel-heading{
+    position: relative;
+    top: 0px;
+    width: 100%;
+}
+
+.light_version .form-control,
+.light_version .custom-select, 
+.light_version .input-group-prepend .input-group-text, 
+.light_version .input-group-append .input-group-text,
+.note-editor.note-frame {
+    border-color: #c6daea;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: #b8bbbf !important;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #b8bbbf !important;
+}
+
+::placeholder {
+  color: #b8bbbf !important;
+}
+
+.dd3-content {
+    display: block;
+    margin-bottom: 14px;
+    padding: 16px 12px 16px 40px;
+    text-decoration: none;
+    /* border: 1px solid #d6d2d2; */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #f1f4f6;
+    cursor: default;
+    font-size: 14px;
+    color: #77797c;
+    border: 1px solid #e1dcdcb5;
+    border-radius: 4px;
+}
+
+.dd3-handle{
+    top: 8px;
+}
+.dd3-item > button {
+    margin-top: 15px;
+}
+.dd3-content span.content-right{
+    float: right;
+    margin-top: -5px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before{
+    content: "➤";
+    color: #b8b8b8;
+}
+
+.theme-cyan .sidebar-nav .metismenu > li.active > a {
+    color: #0099ae;
+}
+
+.theme-cyan .sidebar-nav .metismenu > li.active > a i{
+    background:#0099ae;
+}
+.subtitle{
+    color: #0099aeab;
+}
+
+.dropdown-menu > li > a, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #212529;
+}
+
+.dropdown-menu > li.disabled{
+    color: red;
+}
+
+.gallery-card{
+    border: 10px solid #fff;
+    /*border-bottom: 45px solid #fff;*/
+    -webkit-box-shadow: 3px 3px 3px #777;
+    -moz-box-shadow: 3px 3px 3px #777;
+    box-shadow: 3px 3px 3px #777;
+}
+
+.gallery-hover{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: unset !important;
+    background: rgba(0, 0, 0, 0.8) !important;
+    display: none;
+}
+
+.gallery-card:hover .gallery-hover{
+    display: block;
+    -webkit-animation: fadeInUp 400ms;
+    animation: fadeInUp 400ms;
+}
+#toast-container > div {
+    width: 1000px !important;
+}
+
+/*==============================================================================================*/
+
+/* Expand button to all of option */
+.select2-results__option.select2-results__message {
+  padding: 0px;
+}
+button#no-results-btn {
+  width: 100%;
+  height: 100%;
+  padding: 6px;
+}
+
+/* Make button look like other li elements */
+button#no-results-btn {
+  border: 0;
+  background-color: white;
+  text-align: left;
+}
+
+/* Give button same hover effect */
+  .select2-results__option.select2-results__message:hover {
+  color: white;
+}
+button#no-results-btn:hover {
+  background-color: #5897fb;
+}
+
+#modal-loader{
+    position:fixed;
+    display:none;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100%;
+    z-index:99999999;
+    background-color: rgba(0,0,0,0.7);
+}
+
+@keyframes ldio-xdcxfnbfmjm {
+    0% { transform: rotate(0deg) }
+    50% { transform: rotate(180deg) }
+    100% { transform: rotate(360deg) }
+}
+
+.ldio-shhdvnglxrk div {
+    position: absolute;
+    animation: ldio-xdcxfnbfmjm 1s linear infinite;
+    width: 76px;
+    height: 76px;
+    top: 62px;
+    left: 62px;
+    border-radius: 50%;
+    box-shadow: 0 1px 0 0 #85a2b6;
+    transform-origin: 38px 38.5px;
+}
+
+.loadingio-spinner-eclipse-5n5ocxxlhe2 {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    background: transparent;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.ldio-shhdvnglxrk {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+}
