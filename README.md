@@ -1,82 +1,149 @@
-<<<<<<< HEAD
-# liquor-store
-=======
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# Liquor Store E-commerce Platform
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+Liquor Store is a sophisticated multi-vendor e-commerce platform specifically designed for selling liquors. Developed using PHP Laravel 8, jQuery, and MySQL, the platform features multiple role-based permission levels, providing a secure and efficient environment for vendors and customers.
 
-## About Laravel
+## Description
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Liquor Store offers a comprehensive solution for a multi-vendor marketplace. It supports different user roles including Super Admin, Vendor, and Customer, each with specific permissions. The Super Admin role is responsible for adding products and their variations, such as size and type. Vendors can select these products, add them to their inventory, and set their own pricing for each variation. Customers can browse and purchase liquors from different vendors, comparing prices and variations.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Technical Stack
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Backend Framework:** PHP Laravel 8
+- **Frontend Library:** jQuery
+- **Database:** MySQL
+- **Templating Engine:** Blade (Laravel)
+- **ORM:** Eloquent (Laravel)
+- **Charts and Reports:** Chart.js for sales analytics
+- **Payment Gateway:** Integration with multiple secure payment APIs (e.g., Stripe, PayPal)
+- **Authentication:** Laravel Passport for API authentication
+- **Notification System:** Real-time notifications using Laravel Echo and Pusher
 
-## Learning Laravel
+## Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Multi-Role Permissions
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **Super Admin:**
+  - Add and manage products and their variations (size, type, etc.).
+  - View comprehensive sales reports and analytics.
+  - Manage vendor accounts and permissions.
 
-## Laravel Sponsors
+- **Vendor:**
+  - Select products added by Super Admin and add to their own inventory.
+  - Set prices for products and their variations.
+  - Manage their inventory and view sales statistics.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- **Customer:**
+  - Browse and purchase products from various vendors.
+  - Compare prices and choose vendors based on product variations and pricing.
+  - Utilize click and collect options and multiple payment methods.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+### Product and Inventory Management
 
-## Contributing
+- **Product Variations:**
+  - Support for multiple variations of products such as size, type, and packaging.
+  - Vendors can set individual prices for each variation.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Order and Payment System
 
-## Code of Conduct
+- **Order Processing:**
+  - Real-time order tracking and notifications.
+  - Click and collect option for local pickups.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- **Payment Integration:**
+  - Supports multiple payment methods including credit/debit cards, PayPal, and other digital wallets.
+  - Secure transactions through SSL encryption and secure APIs.
 
-## Security Vulnerabilities
+### Analytics and Reporting
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- **Sales Analytics:**
+  - Multiple charts and graphs displaying sales data, inventory levels, and vendor performance.
+  - Real-time data visualization using Chart.js.
+
+### Additional Features
+
+- **Responsive Design:**
+  - Optimized for various devices to ensure a consistent user experience across desktops, tablets, and mobile phones.
+
+- **Search and Filter:**
+  - Advanced search and filtering options to help customers find products quickly.
+
+- **Reviews and Ratings:**
+  - Customers can leave reviews and ratings for products and vendors.
+
+- **Email Notifications:**
+  - Automated email notifications for order confirmations, shipping updates, and promotional offers.
+
+## Installation
+
+### Prerequisites
+
+- PHP >= 7.3
+- Composer
+- MySQL
+- Node.js and npm
+
+### Steps
+
+1. **Clone the Repository:**
+    ```bash
+    git clone https://github.com/gehendrachy/liquor-store.git
+    cd liquor-store
+    ```
+
+2. **Install Dependencies:**
+    ```bash
+    composer install
+    npm install
+    npm run dev
+    ```
+
+3. **Environment Setup:**
+    - Copy `.env.example` to `.env` and update the configuration settings (database, mail, etc.)
+    ```bash
+    cp .env.example .env
+    php artisan key:generate
+    ```
+
+4. **Database Setup:**
+    - Create a new MySQL database and update `.env` with your database credentials.
+    ```bash
+    php artisan migrate --seed
+    ```
+
+5. **Run the Application:**
+    ```bash
+    php artisan serve
+    ```
+
+6. **Access the Application:**
+    - Open your web browser and go to `http://localhost:8000`
+
+## Development
+
+### Compiling Assets
+
+- To compile CSS and JavaScript assets, use Laravel Mix:
+    ```bash
+    npm run dev
+    ```
+
+### Running Tests
+
+- Run the test suite to ensure everything is working correctly:
+    ```bash
+    php artisan test
+    ```
+
+## Contribution
+
+Contributions are welcome! Please fork the repository and submit pull requests for any enhancements or bug fixes.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
->>>>>>> 4558771 (Files Uploaded)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+---
+
+For any queries or further assistance, please contact us at support@liquorstore.com.
+
+Thank you for choosing Liquor Store!
